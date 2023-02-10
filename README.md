@@ -6,6 +6,7 @@
   - [It does not pollute the global object namespace - Code Example](#does-not-pollute-the-global-object-namespace)
   - [Private Variables and Methods from Closure - Code Example](#private-variables-and-methods-from-closure)
   - [The Module Pattern - Code Example](#the-module-pattern)
+* The Revealing Pattern: (Variation of the Module Pattern)
 
 
 
@@ -34,8 +35,6 @@ so when the function has no name like this it is immediately invoked.
 
 ```
 
-
-Notes: To learn more about github styling please visit: https://github.com/fefong/markdown_readme
 
 ### third variation you may see: with a function name (allows for recursion: where the function calls itself):
 ```
@@ -165,3 +164,35 @@ console.log(Score.current());
 
 ```
 
+## The Revealing Pattern
+```
+// The Revealing Pattern is a variation of the Module Pattern
+
+const Game = (() => {
+  let count = 0;
+  const current = () => { return `Game score is ${count}.`};
+  const increment = () => { count++ };
+  const reset = () => { count = 0 }
+
+  return {
+    current: current,
+    increment: increment,
+    reset: reset
+  }
+  
+})();
+
+Game.increment();
+console.log(Game.current());
+
+// Using pointers instead of defining these methods inside of the return Object.
+// This is called the Revealing Pattern.
+
+
+```
+
+
+
+
+
+Notes: To learn more about github styling please visit: https://github.com/fefong/markdown_readme
