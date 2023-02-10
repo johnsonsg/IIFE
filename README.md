@@ -1,20 +1,21 @@
 # IIFE - Immediately-Invoked Function Expression
 
 * Pronounced "Iffy" by Ben Alman who introduced the acronym
-* 3 Variations
+* 5 Variations
+  - with anonymous arrow functions inside(#with-anonymous-arrow-function-inside)
+  - with the functions keyword(#with-the-functions-keyword)
+  - with a function name(#with-a-function-name)
+  - The Revealing Pattern: (Variation of the Module Pattern)(#the-revealing-pattern)
+
 * 3 Reasons to use an IFFE: 
   - [It does not pollute the global object namespace - Code Example](#does-not-pollute-the-global-object-namespace)
   - [Private Variables and Methods from Closure - Code Example](#private-variables-and-methods-from-closure)
   - [The Module Pattern - Code Example](#the-module-pattern)
   
-* The Revealing Pattern: (Variation of the Module Pattern)
-  - [Code Example](#the-revealing-pattern)
-
-
 
 ## Variations
 
-### with anonymous arrow functions inside: 
+### with anonymous arrow function inside: 
 ```
 (() => {
 // do stuff
@@ -29,7 +30,7 @@ so when the function has no name like this it is immediately invoked.
 
 ```
 
-### second variation you may see: with the functions keyword: 
+### with the functions keyword: 
 ```
 (function (){
 // essentially the same but not an arrow function, it just uses the function keyword.
@@ -38,7 +39,7 @@ so when the function has no name like this it is immediately invoked.
 ```
 
 
-### third variation you may see: with a function name (allows for recursion: where the function calls itself):
+### with a function name (allows for recursion: where the function calls itself):
 ```
 // Immediately invoked
 
