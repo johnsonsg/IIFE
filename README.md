@@ -34,6 +34,9 @@ so when the function has no name like this it is immediately invoked.
 
 ```
 
+
+Notes: To learn more about github styling please visit: https://github.com/fefong/markdown_readme
+
 ### third variation you may see: with a function name (allows for recursion: where the function calls itself):
 ```
 // Immediately invoked
