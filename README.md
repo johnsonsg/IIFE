@@ -4,7 +4,7 @@
 * 5 Variations
   - [with anonymous arrow functions inside](#with-anonymous-arrow-function-inside)
   - [with the functions keyword](#with-the-functions-keyword)
-  - [with a function name](#with-a-function-name)
+  - [with a function name: (Allows for recursion)](#with-a-function-name)
   - [The Revealing Pattern (Variation of the Module Pattern)](#the-revealing-pattern)
 
 * 3 Reasons to use an IFFE: 
