@@ -121,7 +121,7 @@ credits(3); // ref error
 
 ```
 
-### Why use IIFE: Reason 3) The Module Pattern (Modules were introduced ES6)
+### Why use IIFE: Reason 3) The Module Pattern (Modules were introduced ES6)#real-cool-heading
 ```
 // Creating an Object that will be returned 
 const score = (() => {
@@ -155,5 +155,3 @@ Score.increment();
 console.log(Score.current());
 
 ```
-
-#real-cool-heading
