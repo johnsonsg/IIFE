@@ -1,6 +1,7 @@
 # IIFE - Immediately-Invoked Function Expression
 
 * Pronounced "Iffy" by Ben Alman who introduced the acronym
+* Why use an IFFE: It does not pollute the global object namespace. 
 
 ## Variations
 
@@ -46,4 +47,40 @@ It would only be referred to by the name of the function inside the IIFE, becaus
 the IIFE is no longer available. 
 
 
+```
+
+### Why use IIFE: Reason 1) Does not pollute the global object namespace
+```
+// global
+const x = 'whatever'
+
+const helloWorld = () => 'Hello World!'
+
+// isolate declarations within the function
+(() => {
+  const x = 'life whatever'
+  const helloWorld = () => 'Hello IIFE!'
+  console.log(x)
+  console.log(helloWorld())
+})()
+
+the IFFE is immediately invoked, but you can how the functions outside the IFFE are waiting to be called. so, lets now lets console.log() them.
+
+// global
+const x = 'whatever'
+
+const helloWorld = () => 'Hello World!'
+
+// isolate declarations within the function
+(() => {
+  const x = 'life whatever'
+  const helloWorld = () => 'Hello IIFE!'
+  console.log(x)
+  console.log(helloWorld())
+})()
+
+console.log(x)
+console.log(helloWorld())
+
+// Now you return the the two functions outside the IFFE, and this creates a namespace.
 ```
