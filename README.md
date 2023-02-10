@@ -55,6 +55,8 @@ the IIFE is no longer available.
 
 ```
 
+## 3 Reasons to use an IFFE
+
 ### Does not pollute the global object namespace
 ```
 // global
