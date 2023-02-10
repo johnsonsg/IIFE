@@ -2,10 +2,11 @@
 
 * Pronounced "Iffy" by Ben Alman who introduced the acronym
 * 3 Variations
-* Reasons to use an IFFE: 
-  - 1.) It does not pollute the global object namespace. [Go to Real Cool Heading section](#real-cool-heading)
-  - 2.) Private Variables and Methods from Closure.
-  - 3.) The Module Pattern 
+* 3 Reasons to use an IFFE: 
+  - It does not pollute the global object namespace. 
+  - Private Variables and Methods from Closure.
+  - The Module Pattern 
+  - 	[Markdown - Link](#Link)
 
 ## Variations
 
@@ -155,3 +156,4 @@ Score.increment();
 console.log(Score.current());
 
 ```
+#Link
