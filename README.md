@@ -6,7 +6,9 @@
   - [It does not pollute the global object namespace - Code Example](#does-not-pollute-the-global-object-namespace)
   - [Private Variables and Methods from Closure - Code Example](#private-variables-and-methods-from-closure)
   - [The Module Pattern - Code Example](#the-module-pattern)
+  
 * The Revealing Pattern: (Variation of the Module Pattern)
+  - [Code Example](#the-revealing-pattern)
 
 
 
