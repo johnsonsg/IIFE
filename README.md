@@ -6,6 +6,7 @@
   - [with the functions keyword](#with-the-functions-keyword)
   - [with a function name: (Allows for recursion)](#with-a-function-name)
   - [The Revealing Pattern (Variation of the Module Pattern)](#the-revealing-pattern)
+  - [Injecting a namespace object](#injecting-a-namespace-object)
 
 * 3 Reasons to use an IFFE: 
   - [It does not pollute the global object namespace - Code Example](#does-not-pollute-the-global-object-namespace)
@@ -169,6 +170,7 @@ console.log(Score.current());
 
 ```
 
+# More Variations
 ## The Revealing Pattern
 ```
 // The Revealing Pattern is a variation of the Module Pattern
@@ -193,6 +195,27 @@ console.log(Game.current());
 // Using pointers instead of defining these methods inside of the return Object.
 // This is called the Revealing Pattern.
 
+
+```
+
+## Injecting a namespace object
+```
+((namespace) => {
+  namespace.count = 0;
+  namespace.current = function() { return `App count is ${this.count}.`}; 
+  namespace.increment = function() { this.count++ };
+  namespace.reset = function () { this.count = 0 };
+})(window.App = window.App || {});
+
+
+// Noticed how we dont have a const definition at the beginning of the iife.
+We are just defining the iife, and we call it into action with the (window.App...)
+So, lets break it down. We got a namespace parameter at the beginning, and refer to 
+the namespace through out passing it into an Object to this iife. 
+Then we are using the dot notation to set the values to the property/method.
+
+Also noticed how we are using the function keyword instead of the arrow function, 
+we do this so we can use the keyword 'this.' inside of the methods.
 
 ```
 
