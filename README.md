@@ -39,7 +39,9 @@ so when the function has no name like this it is immediately invoked.
 This enables us to call the function (allows for recursion) again. So if we need an IIFE with recursion 
 where the function actually calls itself, we can refer to the function by name within.
 
-After, it is executed outside the function scope, you can not call it again. It can only be called once. It would only be referred to by the name of the function inside the IIFE, because after it is invoked, the IIFE is no longer available. 
+After, it is executed outside the function scope, you can not call it again. It can only be called once. 
+It would only be referred to by the name of the function inside the IIFE, because after it is invoked,
+the IIFE is no longer available. 
 
 
 ```
