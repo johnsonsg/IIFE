@@ -84,3 +84,26 @@ console.log(helloWorld())
 
 // Now you return the the two functions outside the IFFE, and this creates a namespace.
 ```
+
+### Why use IIFE: Reason 2) Private Variables and Methods from Closure.
+```
+const increment = (() => {
+let counter = 0;
+console.log(counter)
+const credit = (num) => console.log(`I have ${num} credit(s)!`)
+return () => { counter++; credits(counter); }
+})()
+
+You will see the immediately invoked expression is called once: returning '0' and now it is complete.
+But now lets call the function increment
+
+const increment = (() => { 
+  let counter = 0;
+  console.log(counter);
+  const credits = (num) => console.log(`I have ${num} credits`);
+  return () => { counter++; credits(counter); }
+})()
+
+increment();
+
+```
