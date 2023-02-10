@@ -104,6 +104,15 @@ const increment = (() => {
   return () => { counter++; credits(counter); } // Anonymous function
 })()
 
-increment();
+increment(); // Call function
+
+Now it calls our anonymous function into action, and it still has lexible scope to 
+refer to the counter variable.  And if you call increment() again you can see 
+it adding to the num count.
+
+However, if you try to access the counter var directly or the credits function 
+directly you will get a ref error because they are not availabe in the global scope
+
+credits(3); // ref error
 
 ```
