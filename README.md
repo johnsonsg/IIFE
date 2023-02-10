@@ -6,6 +6,7 @@
   - [It does not pollute the global object namespace](#it-does-not-pollute-the-global-object-namespace)
   - [Private Variables and Methods from Closure](#private-variables-and-methods-from-closure)
   - [The Module Pattern ](#the-module-pattern)
+  - [Markdown - Link](#Link)
 
 
 ## Variations
@@ -54,7 +55,7 @@ the IIFE is no longer available.
 
 ```
 
-# Does not pollute the global object namespace
+### Does not pollute the global object namespace
 ```
 // global
 const x = 'whatever'
@@ -90,7 +91,7 @@ console.log(helloWorld())
 // Now you return the the two functions outside the IFFE, and this creates a namespace.
 ```
 
-# Private Variables and Methods from Closure
+### Private Variables and Methods from Closure
 ```
 const increment = (() => {
 let counter = 0;
@@ -122,7 +123,7 @@ credits(3); // ref error
 
 ```
 
-# The Module Pattern
+### The Module Pattern
 ```
 // (Modules were introduced ES6)
 
