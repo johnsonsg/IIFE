@@ -90,8 +90,8 @@ console.log(helloWorld())
 const increment = (() => {
 let counter = 0;
 console.log(counter)
-const credit = (num) => console.log(`I have ${num} credit(s)!`)
-return () => { counter++; credits(counter); }
+const credits = (num) => console.log(`I have ${num} credits`); // Credits function
+return () => { counter++; credits(counter); } // Anonymous function
 })()
 
 You will see the immediately invoked expression is called once: returning '0' and now it is complete.
@@ -100,8 +100,8 @@ But now lets call the function increment
 const increment = (() => { 
   let counter = 0;
   console.log(counter);
-  const credits = (num) => console.log(`I have ${num} credits`);
-  return () => { counter++; credits(counter); }
+  const credits = (num) => console.log(`I have ${num} credits`); // Credits function
+  return () => { counter++; credits(counter); } // Anonymous function
 })()
 
 increment();
