@@ -116,3 +116,38 @@ directly you will get a ref error because they are not availabe in the global sc
 credits(3); // ref error
 
 ```
+
+### Why use IIFE: Reason 3) The Module Pattern (Modules were introduced ES6)
+```
+// Creating an Object that will be returned 
+const score = (() => {
+  let count = 0; // private variable
+
+// return object
+  return {
+    current: () => { return count },
+    increment: () => { count++ },
+    reset: () => { count = 0 }
+  }
+})();
+
+You will see that when you run it just like this, it returns nothing. 
+But, 'Score' will now have access to the methods returned in the Object.
+
+So, lets look at an example of that by calling 'Score' with a dot notation:
+
+// Creating an Object that will be returned 
+const Score = (() => {
+  let count = 0;
+
+  return {
+    current: () => { return count },
+    increment: () => { count++ },
+    reset: () => { count = 0 }
+  }
+})();
+
+Score.increment();
+console.log(Score.current());
+
+```
