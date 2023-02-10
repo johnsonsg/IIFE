@@ -6,7 +6,7 @@
   - It does not pollute the global object namespace. 
   - Private Variables and Methods from Closure.
   - The Module Pattern 
-  - 	[Markdown - Link](#Link)
+  - [Markdown - Link](#Link)
 
 ## Variations
 
@@ -156,4 +156,4 @@ Score.increment();
 console.log(Score.current());
 
 ```
-#Link
+# Link
