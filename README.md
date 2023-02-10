@@ -1,7 +1,9 @@
 # IIFE - Immediately-Invoked Function Expression
 
 * Pronounced "Iffy" by Ben Alman who introduced the acronym
-* Why use an IFFE: It does not pollute the global object namespace. 
+* 3 Variations
+* Reasons to use an IFFE: 
+** It does not pollute the global object namespace. 
 
 ## Variations
 
