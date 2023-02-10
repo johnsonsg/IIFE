@@ -39,8 +39,10 @@ so when the function has no name like this it is immediately invoked.
 ```
 
 
-### with a function name (allows for recursion: where the function calls itself):
+### with a function name:
 ```
+// allows for recursion: where the function calls itself
+
 // Immediately invoked
 
 (function myIIFE(num = 0){
