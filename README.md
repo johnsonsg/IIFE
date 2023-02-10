@@ -3,9 +3,9 @@
 * Pronounced "Iffy" by Ben Alman who introduced the acronym
 * 3 Variations
 * 3 Reasons to use an IFFE: 
-  - [It does not pollute the global object namespace](#does-not-pollute-the-global-object-namespace)
-  - [Private Variables and Methods from Closure](#private-variables-and-methods-from-closure)
-  - [The Module Pattern ](#the-module-pattern)
+  - [It does not pollute the global object namespace - Code Example](#does-not-pollute-the-global-object-namespace)
+  - [Private Variables and Methods from Closure - Code Example](#private-variables-and-methods-from-closure)
+  - [The Module Pattern - Code Example](#the-module-pattern)
 
 
 
