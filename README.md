@@ -31,11 +31,13 @@ so when the function has no name like this it is immediately invoked.
 ```
 // Immediately invoked
 
-(function myIIFE(){
+(function myIIFE(num = 0){
   num++
   console.log(num)
   return num !== 5 ? myIIFE(num) : console.log('finished')
-})(num = 0); // passing in a parameter and giving it a value in case the parameter is not provided. 
+})(); 
+
+// passing in a parameter and giving it a value in case the parameter is not provided. 
 This enables us to call the function (allows for recursion) again. So if we need an IIFE with recursion 
 where the function actually calls itself, we can refer to the function by name within.
 
