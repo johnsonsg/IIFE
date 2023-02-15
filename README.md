@@ -1,6 +1,14 @@
 # IIFE - Immediately-Invoked Function Expression
 
-* Pronounced "Iffy" by Ben Alman who introduced the acronym
+* Pronounced "IIfy" by Ben Alman who introduced the acronym
+
+* What is an IIFE
+  - Only invoked once. 
+  - An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+# Why Use an IIFE
+  - An IIFE is a good way at protecting the scope of your function and the variables within it.
+
 * 5 Variations
   - [with anonymous arrow functions inside](#with-anonymous-arrow-function-inside)
   - [with the functions keyword](#with-the-functions-keyword)
